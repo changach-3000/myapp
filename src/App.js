@@ -1,12 +1,20 @@
 import './App.css';
-import Article from './components/Article';
+import Blogs from './components/Blog';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       
-      <Article/>
+   
+        <Switch>
+            <Route path="/">
+             <Blogs />
+            </Route>
+        </Switch>
     </div>
+    </Router>
   );
 }
 
