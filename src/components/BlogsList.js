@@ -1,10 +1,10 @@
 import React from 'react'
 
-function BlogsList (props)  {
-    const blogs = props.blogs;
-
+function BlogsList ({blogs,title})  {
+    
   return (
     <div>
+        <h2>{title}</h2>
          {
         blogs.map((blog) =>(
           <div key={blog.id}> 
